@@ -24,8 +24,8 @@
 \addbibresource{referencias.bib}
 \renewcommand*{\bibfont}{\footnotesize}
 % Adaptación al español de APA 7: «y» en lugar de «&»
-\DeclareDelimFormat[parencite]{finalnamedelim}{\ifnum\value{liststop}>2 \finalandcomma\fi\addspace y\space}
-\DeclareDelimFormat[bib,biblist]{finalnamedelim}{\ifnum\value{liststop}>2 \finalandcomma\fi\addspace y\space}
+\DeclareDelimFormat[parencite]{finalnamedelim}{\addspace y\space}
+\DeclareDelimFormat[bib,biblist]{finalnamedelim}{\addspace y\space}
 \setlength{\bibhang}{1.5em}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
