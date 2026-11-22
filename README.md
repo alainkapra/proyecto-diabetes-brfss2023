@@ -110,11 +110,11 @@ Todo el preprocesamiento vive dentro de *pipelines* de scikit-learn. Así, ningu
 
 | Documento | Contenido |
 |---|---|
-| [Artículo final (Fase 4)](reports/FASE_4_ENTREGA_FINAL_ALAIN_CAMACHO.pdf) | Informe técnico en formato de artículo científico |
 | [Fase 1](reports/FASE_1_Diabetes_Health_Indicators_ALAIN_CAMACHO.pdf) | Análisis exploratorio |
 | [Fase 2A](reports/FASE_2_ACT_3_Limpieza_Ingenieria_Variables_ALAIN_CAMACHO.pdf) | Limpieza e ingeniería de variables |
 | [Fase 2B](reports/FASE_2_ACT_4_Particion_Modelo_Base_ALAIN_CAMACHO.pdf) | Partición y modelo base |
 | [Fase 3](reports/FASE_3_Diabetes_Health_Indicators_ALAIN_CAMACHO.pdf) | Modelado avanzado, segmentación, optimización e interpretabilidad |
+| [Artículo final (Fase 4)](reports/FASE_4_ENTREGA_FINAL_ALAIN_CAMACHO.pdf) | Informe técnico (Artículo científico) |
 
 ## Estructura del repositorio
 
@@ -152,7 +152,7 @@ proyecto-diabetes-brfss2023/
 
 </details>
 
-## Datos y uso responsable
+## Fuentes y uso
 
 - **Fuentes:**
   - Centers for Disease Control and Prevention (2023), *Behavioral Risk Factor Surveillance System: 2023 Survey Data and Documentation*.
