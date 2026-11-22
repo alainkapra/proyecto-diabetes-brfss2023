@@ -7,27 +7,15 @@
 </p>
 
 <p align="center">
-  <a href="https://alainkapra-diabetes-brfss2023.streamlit.app"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Abrir en Streamlit"></a>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white" alt="Python 3.13">
-  <img src="https://img.shields.io/badge/scikit--learn-1.9.1-F7931E?logo=scikitlearn&logoColor=white" alt="scikit-learn 1.9.1">
-  <img src="https://img.shields.io/badge/XGBoost-3.4.1-189FDD" alt="XGBoost 3.4.1">
-  <img src="https://img.shields.io/badge/PyTorch-2.15-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch 2.15">
-  <img src="https://img.shields.io/badge/SHAP-0.54-8A2BE2" alt="SHAP 0.54">
-</p>
-
-<p align="center">
   <b><a href="https://alainkapra-diabetes-brfss2023.streamlit.app">Aplicación en vivo</a></b>
   &nbsp;·&nbsp;
-  <b><a href="reports/FASE_4_Articulo_IEEE_Diabetes_BRFSS2023_ALAIN_CAMACHO.pdf">Artículo final (PDF)</a></b>
-  &nbsp;·&nbsp;
-  <b><a href="#ejecutar-el-proyecto">Ejecutar el proyecto</a></b>
+  <b><a href="reports/FASE_4_ENTREGA_FINAL_ALAIN_CAMACHO.pdf">Artículo final (PDF)</a></b>
 </p>
 
 ---
 
 **Proyecto Integrador de Ciencia de Datos e Inteligencia Artificial** · Maestría en Inteligencia Artificial, Universidad de La Salle (Bogotá), 2026
-**Autor:** Md. Alain Alexander Camacho Prado · [acamacho88@unisalle.edu.co](mailto:acamacho88@unisalle.edu.co)
+**Autor:** Alain Alexander Camacho Prado, Md. · [acamacho88@unisalle.edu.co](mailto:acamacho88@unisalle.edu.co)
 **Asignatura:** Ciencia de Datos · **Docente:** Fabián Camilo Castro Riveros
 
 ## De qué se trata
@@ -115,37 +103,11 @@ Además, la aplicación incluye:
 
 Todo el preprocesamiento vive dentro de *pipelines* de scikit-learn. Así, ninguna transformación aprende de los datos de evaluación (sin fuga de datos), y la aplicación usa exactamente el mismo código que el entrenamiento.
 
-## Ejecutar el proyecto
-
-**Requisito:** Python 3.13.
-
-```bash
-# 1. Clonar el repositorio
-git clone https://github.com/alainkapra/proyecto-diabetes-brfss2023.git
-cd proyecto-diabetes-brfss2023
-
-# 2. Crear el entorno (elija una opción)
-python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-#    o bien, con conda:
-conda env create -f environment.yml && conda activate diabetes-brfss2023
-
-# 3. (Opcional) Reentrenar los modelos: ≈ 15 s, reproduce las métricas de prueba
-python -m src.entrenar_modelos
-
-# 4. Abrir la aplicación en http://localhost:8501
-streamlit run dashboard/app.py
-```
-
-- **Cuadernos:** para reproducir el análisis completo, ejecute en orden los cuadernos de `notebooks/`. La Fase 3 tarda unos 8 minutos en CPU.
-- **Artículo:** se compila con `cd reports/articulo_latex && latexmk -pdf main.tex`. Las citas siguen APA 7 y no requieren `biber`, así que también compila en el plan gratuito de Overleaf. Las tablas se regeneran desde los resultados con `generar_tablas.py`.
-- **Despliegue:** los pasos para publicar en Streamlit Community Cloud están en [docs/DESPLIEGUE.md](docs/DESPLIEGUE.md).
-
 ## Documentos
 
 | Documento | Contenido |
 |---|---|
-| [Artículo final (Fase 4)](reports/FASE_4_Articulo_IEEE_Diabetes_BRFSS2023_ALAIN_CAMACHO.pdf) | Informe técnico en formato de artículo científico, con fuentes en [`reports/articulo_latex`](reports/articulo_latex) |
+| [Artículo final (Fase 4)](reports/FASE_4_ENTREGA_FINAL_ALAIN_CAMACHO.pdf) | Informe técnico en formato de artículo científico |
 | [Fase 1](reports/FASE_1_Diabetes_Health_Indicators_ALAIN_CAMACHO.pdf) | Análisis exploratorio |
 | [Fase 2 · Actividad 3](reports/FASE_2_ACT_3_Limpieza_Ingenieria_Variables_ALAIN_CAMACHO.pdf) | Limpieza e ingeniería de variables |
 | [Fase 2 · Actividad 4](reports/FASE_2_ACT_4_Particion_Modelo_Base_ALAIN_CAMACHO.pdf) | Partición y modelo base |
@@ -175,7 +137,7 @@ proyecto-diabetes-brfss2023/
 │   └── requirements.txt         dependencias mínimas para el despliegue
 ├── models/                      modelos finales (.joblib) y metadatos (métricas, umbral, versiones)
 ├── reports/
-│   ├── FASE_4_Articulo_…pdf     artículo final
+│   ├── FASE_4_ENTREGA_FINAL…pdf artículo final
 │   ├── articulo_latex/          fuentes LaTeX (main.tex, referencias, tablas, figuras)
 │   ├── FASE_1 … FASE_3 (PDF)    informes de las fases anteriores
 │   └── resultados/, figuras/, artefactos_fase2/, artefactos_fase3/
