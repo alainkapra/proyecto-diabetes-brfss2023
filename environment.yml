@@ -1,0 +1,26 @@
+# Entorno conda equivalente a requirements.txt (versiones exactas)
+# Uso: conda env create -f environment.yml && conda activate diabetes-brfss2023
+name: diabetes-brfss2023
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - pandas==3.0.5
+      - numpy==2.5.3
+      - scipy==1.18.1
+      - scikit-learn==1.9.1
+      - imbalanced-learn==0.14.2
+      - xgboost==3.4.1
+      - torch==2.15.0
+      - shap==0.54.1
+      - matplotlib==3.11.2
+      - seaborn==0.13.2
+      - joblib==1.6.0
+      - pyarrow==26.0.1
+      - streamlit==1.67.0
+      - plotly==7.1.0
+      - nbformat==5.11.1
+      - nbclient==0.11.0
+      - ipykernel==7.4.0

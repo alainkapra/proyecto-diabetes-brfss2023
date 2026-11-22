@@ -1,0 +1,780 @@
+{
+ "verificacion": [
+  {
+   "Aspecto": "Registros",
+   "Reportado en Fase 1": "272.270",
+   "Verificado en Fase 2": "272.769"
+  },
+  {
+   "Aspecto": "Variables",
+   "Reportado en Fase 1": "18",
+   "Verificado en Fase 2": "18"
+  },
+  {
+   "Aspecto": "Valores faltantes",
+   "Reportado en Fase 1": "0",
+   "Verificado en Fase 2": "0"
+  },
+  {
+   "Aspecto": "Duplicados exactos",
+   "Reportado en Fase 1": "0",
+   "Verificado en Fase 2": "33.805"
+  },
+  {
+   "Aspecto": "Clases (no / sí)",
+   "Reportado en Fase 1": "85,40 % / 14,60 %",
+   "Verificado en Fase 2": "85,38 % / 14,62 %"
+  },
+  {
+   "Aspecto": "IMC: media / mediana",
+   "Reportado en Fase 1": "28,71 / 27,00",
+   "Verificado en Fase 2": "28,81 / 28,00"
+  },
+  {
+   "Aspecto": "IMC: rango",
+   "Reportado en Fase 1": "12 – 98",
+   "Verificado en Fase 2": "12 – 100"
+  },
+  {
+   "Aspecto": "IMC: atípicos por IQR",
+   "Reportado en Fase 1": "18.743 (6,88 %)",
+   "Verificado en Fase 2": "6.935 (2,54 %)"
+  },
+  {
+   "Aspecto": "IMC: percentil 99",
+   "Reportado en Fase 1": "47,0",
+   "Verificado en Fase 2": "50,0"
+  },
+  {
+   "Aspecto": "Education: códigos",
+   "Reportado en Fase 1": "1 – 6",
+   "Verificado en Fase 2": "2 – 6"
+  },
+  {
+   "Aspecto": "Income: códigos",
+   "Reportado en Fase 1": "1 – 8",
+   "Verificado en Fase 2": "1 – 7"
+  }
+ ],
+ "n_total": 272769,
+ "prev_total": 0.1461969651976581,
+ "faltantes_total": 0,
+ "fuera_dominio": {
+  "BMI": 2
+ },
+ "educ_valores": [
+  2,
+  4,
+  5,
+  6
+ ],
+ "income_valores": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "duplicados": {
+  "n": 33805,
+  "pct": 12.393270496280735,
+  "perfiles_unicos": 238964,
+  "prev_dup": 0.023339742641621062,
+  "prev_no_dup": 0.16357694045965082,
+  "imc_dup": 26.381925750628604,
+  "genhlth_dup": 1.8719420204111819,
+  "genhlth_no_dup": 2.6796211981721094
+ },
+ "particion": [
+  {
+   "Conjunto": "Entrenamiento",
+   "Registros": 190938,
+   "% del total": 69.99989001682742,
+   "Diabéticos": 27915,
+   "% diabéticos": 14.619928982182698,
+   "IMC medio": 28.806895432025055
+  },
+  {
+   "Conjunto": "Validación",
+   "Registros": 40915,
+   "% del total": 14.999871686298663,
+   "Diabéticos": 5981,
+   "% diabéticos": 14.61811071734083,
+   "IMC medio": 28.840694121960162
+  },
+  {
+   "Conjunto": "Prueba",
+   "Registros": 40916,
+   "% del total": 15.000238296873912,
+   "Diabéticos": 5982,
+   "% diabéticos": 14.620197477759312,
+   "IMC medio": 28.77461139896373
+  }
+ ],
+ "atipicos": {
+  "tabla": [
+   {
+    "Alternativa": "Original",
+    "Media": 28.806895432025055,
+    "Mediana": 28.0,
+    "Desv. est.": 6.520150529988716,
+    "Mín.": 12.0,
+    "Máx.": 100.0,
+    "Asimetría": 1.369496106307665,
+    "Curtosis": 4.191261244022145,
+    "% registros eliminados": 0.0
+   },
+   {
+    "Alternativa": "Winsorization p1–p99",
+    "Media": 28.757565282971434,
+    "Mediana": 28.0,
+    "Desv. est.": 6.228080054582983,
+    "Mín.": 18.0,
+    "Máx.": 50.0,
+    "Asimetría": 0.971640892975035,
+    "Curtosis": 1.0927337940833128,
+    "% registros eliminados": 0.0
+   },
+   {
+    "Alternativa": "Transformación logarítmica",
+    "Media": 3.3374125957489014,
+    "Mediana": 3.332204580307007,
+    "Desv. est.": 0.21188002824783325,
+    "Mín.": 2.4849066734313965,
+    "Máx.": 4.605170249938965,
+    "Asimetría": 0.4388367533683777,
+    "Curtosis": 0.6805663108825684,
+    "% registros eliminados": 0.0
+   },
+   {
+    "Alternativa": "Remoción por regla IQR",
+    "Media": 28.243106867070413,
+    "Mediana": 27.0,
+    "Desv. est.": 5.479460004965265,
+    "Mín.": 12.0,
+    "Máx.": 44.0,
+    "Asimetría": 0.5430786032610663,
+    "Curtosis": 0.008407421862068443,
+    "% registros eliminados": 2.5385203573935033
+   }
+  ],
+  "lim_inf": 18.0,
+  "lim_sup": 50.0,
+  "iqr_inf": 12.0,
+  "iqr_sup": 44.0,
+  "n_iqr": 4847,
+  "pct_iqr": 2.5385203573934993,
+  "n_recortados_sup": 1660,
+  "n_recortados_inf": 1227,
+  "pct_recortados": 1.5120091338549686,
+  "prev_iqr": 0.3193728079224262,
+  "prev_resto": 0.14168874367916773,
+  "n_z3": 2388
+ },
+ "imputacion": [
+  {
+   "Mecanismo": "MCAR",
+   "Imputador": "Media",
+   "RMSE": 6.321127424700921,
+   "Sesgo": 0.19585912201620448,
+   "% oculto": 9.74
+  },
+  {
+   "Mecanismo": "MCAR",
+   "Imputador": "Mediana",
+   "RMSE": 6.340565595743173,
+   "Sesgo": -0.5333675564681725,
+   "% oculto": 9.74
+  },
+  {
+   "Mecanismo": "MCAR",
+   "Imputador": "KNNImputer (k = 5)",
+   "RMSE": 6.414568890048227,
+   "Sesgo": 0.2636550308008213,
+   "% oculto": 9.74
+  },
+  {
+   "Mecanismo": "MCAR",
+   "Imputador": "IterativeImputer",
+   "RMSE": 5.90938565751764,
+   "Sesgo": 0.1967089733838861,
+   "% oculto": 9.74
+  },
+  {
+   "Mecanismo": "MAR",
+   "Imputador": "Media",
+   "RMSE": 6.811807772892085,
+   "Sesgo": -0.7456867714719535,
+   "% oculto": 9.700000000000001
+  },
+  {
+   "Mecanismo": "MAR",
+   "Imputador": "Mediana",
+   "RMSE": 7.178145526239788,
+   "Sesgo": -2.3835051546391752,
+   "% oculto": 9.700000000000001
+  },
+  {
+   "Mecanismo": "MAR",
+   "Imputador": "KNNImputer (k = 5)",
+   "RMSE": 6.819000138333914,
+   "Sesgo": -0.09402061855670099,
+   "% oculto": 9.700000000000001
+  },
+  {
+   "Mecanismo": "MAR",
+   "Imputador": "IterativeImputer",
+   "RMSE": 6.362492765783529,
+   "Sesgo": -0.22309764744890326,
+   "% oculto": 9.700000000000001
+  },
+  {
+   "Mecanismo": "MNAR",
+   "Imputador": "Media",
+   "RMSE": 12.595268833269673,
+   "Sesgo": -9.491698013919622,
+   "% oculto": 9.435
+  },
+  {
+   "Mecanismo": "MNAR",
+   "Imputador": "Mediana",
+   "RMSE": 13.220000585260873,
+   "Sesgo": -10.306306306306306,
+   "% oculto": 9.435
+  },
+  {
+   "Mecanismo": "MNAR",
+   "Imputador": "KNNImputer (k = 5)",
+   "RMSE": 11.74979213698358,
+   "Sesgo": -8.458293587705352,
+   "% oculto": 9.435
+  },
+  {
+   "Mecanismo": "MNAR",
+   "Imputador": "IterativeImputer",
+   "RMSE": 11.726836693477757,
+   "Sesgo": -8.74134963236573,
+   "% oculto": 9.435
+  }
+ ],
+ "derivadas": {
+  "prev_cat": {
+   "Bajo peso": [
+    0.061667301103920824,
+    2627
+   ],
+   "Normal": [
+    0.06965816488517304,
+    47245
+   ],
+   "Sobrepeso": [
+    0.12180435706227932,
+    68257
+   ],
+   "Obesidad I": [
+    0.18850763807285548,
+    42550
+   ],
+   "Obesidad II": [
+    0.24593428476601395,
+    18078
+   ],
+   "Obesidad III": [
+    0.3021919382645103,
+    12181
+   ]
+  },
+  "prev_cr": {
+   "0": [
+    0.04335939635846684,
+    73156
+   ],
+   "1": [
+    0.13054619884925944,
+    62047
+   ],
+   "2": [
+    0.27188610457335366,
+    43338
+   ],
+   "3": [
+    0.38266778367308946,
+    10743
+   ],
+   "4": [
+    0.4528415961305925,
+    1654
+   ]
+  },
+  "prev_ud": {
+   "0": [
+    0.12849155160997622,
+    81554
+   ],
+   "1–5": [
+    0.11939621957300213,
+    44122
+   ],
+   "6–13": [
+    0.1342370953216097,
+    21097
+   ],
+   "14–29": [
+    0.16084099868593954,
+    19025
+   ],
+   "30": [
+    0.2496420047732697,
+    25140
+   ]
+  },
+  "spearman": {
+   "BMI_cat (ordinal)": 0.18802050914948698,
+   "CardioRisk": 0.29572041812003935,
+   "UnhealthyDays": 0.08314328643134296,
+   "Age_BMI": 0.2766146105664689,
+   "BMI (referencia)": 0.1924497878550376,
+   "Age (referencia)": 0.1892032335249428,
+   "HighBP (referencia)": 0.2569030374687859
+  },
+  "chi_cat": 7118.5666597421605,
+  "chi_cr": 17863.133171998023,
+  "ud_media": 7.479815437471849,
+  "ud_cero": 42.71229404309253
+ },
+ "prep": {
+  "n_features": 24,
+  "nombres": [
+   "BMI",
+   "MentHlth",
+   "PhysHlth",
+   "UnhealthyDays",
+   "Age_BMI",
+   "GenHlth",
+   "Age",
+   "Education",
+   "Income",
+   "HighBP",
+   "HighChol",
+   "CholCheck",
+   "Smoker",
+   "Stroke",
+   "HeartDiseaseorAttack",
+   "PhysActivity",
+   "NoDocbcCost",
+   "DiffWalk",
+   "Sex",
+   "BMI_cat_Normal",
+   "BMI_cat_Obesidad I",
+   "BMI_cat_Obesidad II",
+   "BMI_cat_Obesidad III",
+   "BMI_cat_Sobrepeso"
+  ],
+  "escala": [
+   {
+    "Variable": "BMI",
+    "Media en train": 3.9498978875766746e-16,
+    "Desv. en train": 0.9999999999998994,
+    "Media en validación": 0.004639395453197561,
+    "Desv. en validación": 1.0036807277292596
+   },
+   {
+    "Variable": "MentHlth",
+    "Media en train": 2.757991735182639e-16,
+    "Desv. en train": 0.9999999999995762,
+    "Media en validación": -0.0019876639014901327,
+    "Desv. en validación": 0.9954537867101046
+   },
+   {
+    "Variable": "PhysHlth",
+    "Media en train": 1.2110535427515894e-16,
+    "Desv. en train": 0.9999999999990419,
+    "Media en validación": -0.002530032378308158,
+    "Desv. en validación": 0.9977010124749808
+   },
+   {
+    "Variable": "UnhealthyDays",
+    "Media en train": 1.4427933674404184e-16,
+    "Desv. en train": 1.0000000000000977,
+    "Media en validación": -0.00030238120108546295,
+    "Desv. en validación": 0.9998310316242542
+   },
+   {
+    "Variable": "Age_BMI",
+    "Media en train": -3.8764656395276163e-16,
+    "Desv. en train": 1.0000000000000304,
+    "Media en validación": -0.00458674838213891,
+    "Desv. en validación": 1.0003538371531688
+   },
+   {
+    "Variable": "GenHlth",
+    "Media en train": -9.341673347276028e-16,
+    "Desv. en train": 1.0000000000007747,
+    "Media en validación": 0.0005928512349372598,
+    "Desv. en validación": 0.9970731914033141
+   },
+   {
+    "Variable": "Age",
+    "Media en train": 9.972888904136085e-16,
+    "Desv. en train": 1.000000000000563,
+    "Media en validación": -0.007308115675270224,
+    "Desv. en validación": 1.0015086257808496
+   },
+   {
+    "Variable": "Education",
+    "Media en train": -5.193321160701937e-15,
+    "Desv. en train": 1.0000000000004172,
+    "Media en validación": 0.002166571926856848,
+    "Desv. en validación": 0.9984350652732136
+   },
+   {
+    "Variable": "Income",
+    "Media en train": 1.6419720169248665e-15,
+    "Desv. en train": 0.9999999999991205,
+    "Media en validación": 0.004146970613454927,
+    "Desv. en validación": 0.9965067239472744
+   }
+  ]
+ },
+ "desbalance": [
+  {
+   "Estrategia": "Sin tratamiento",
+   "Accuracy": 0.8574117071978492,
+   "Balanced accuracy": 0.5621743716268288,
+   "Precision": 0.5463137996219282,
+   "Recall": 0.14495903695034276,
+   "F1 (clase 1)": 0.22912262156448204,
+   "F1 macro": 0.5752814637541512,
+   "F1 ponderado": 0.8202365403255185,
+   "AUC-ROC": 0.8068705635822574,
+   "AUC-PR": 0.4033791492958233
+  },
+  {
+   "Estrategia": "class_weight = balanced",
+   "Accuracy": 0.7183184651105952,
+   "Balanced accuracy": 0.7316723349058434,
+   "Precision": 0.3091172014873984,
+   "Recall": 0.7505433873934124,
+   "F1 (clase 1)": 0.43788713846754135,
+   "F1 macro": 0.6249800621324939,
+   "F1 ponderado": 0.7573740843461411,
+   "AUC-ROC": 0.8071208504417728,
+   "AUC-PR": 0.40183747606265174
+  },
+  {
+   "Estrategia": "SMOTE",
+   "Accuracy": 0.7176830013442502,
+   "Balanced accuracy": 0.7315773460292625,
+   "Precision": 0.3086699642759,
+   "Recall": 0.7512121718776125,
+   "F1 (clase 1)": 0.4375517358913181,
+   "F1 macro": 0.624548142104209,
+   "F1 ponderado": 0.7568738649218023,
+   "AUC-ROC": 0.8053780843015537,
+   "AUC-PR": 0.39727187022054017
+  },
+  {
+   "Estrategia": "Submuestreo aleatorio",
+   "Accuracy": 0.7181962605401442,
+   "Balanced accuracy": 0.7320164835254771,
+   "Precision": 0.3091684434968017,
+   "Recall": 0.7515465641197124,
+   "F1 (clase 1)": 0.43810916179337234,
+   "F1 macro": 0.6250242432682406,
+   "F1 ponderado": 0.7572924176283007,
+   "AUC-ROC": 0.8071152268246022,
+   "AUC-PR": 0.4015941287659839
+  },
+  {
+   "Estrategia": "Umbral ajustado (0.22)",
+   "Accuracy": 0.7872174019308322,
+   "Balanced accuracy": 0.7070301828962072,
+   "Precision": 0.3613513788541773,
+   "Recall": 0.5937134258485203,
+   "F1 (clase 1)": 0.4492661943319838,
+   "F1 macro": 0.6587005292340904,
+   "F1 ponderado": 0.8069041782239644,
+   "AUC-ROC": 0.8068705635822574,
+   "AUC-PR": 0.4033791492958233
+  }
+ ],
+ "umbral_opt": 0.21712953538765986,
+ "baseline_clf": [
+  {
+   "Modelo": "Dummy (clase mayoritaria)",
+   "Conjunto": "Entrenamiento",
+   "Accuracy": 0.853800710178173,
+   "Balanced accuracy": 0.5,
+   "Precision": 0.0,
+   "Recall": 0.0,
+   "F1 (clase 1)": 0.0,
+   "F1 macro": 0.4605676896607253,
+   "F1 ponderado": 0.7864660410348953,
+   "AUC-ROC": 0.5,
+   "AUC-PR": 0.14619928982182698
+  },
+  {
+   "Modelo": "Dummy (clase mayoritaria)",
+   "Conjunto": "Validación",
+   "Accuracy": 0.8538188928265917,
+   "Balanced accuracy": 0.5,
+   "Precision": 0.0,
+   "Recall": 0.0,
+   "F1 (clase 1)": 0.0,
+   "F1 macro": 0.4605729805270999,
+   "F1 ponderado": 0.7864918245989836,
+   "AUC-ROC": 0.5,
+   "AUC-PR": 0.1461811071734083
+  },
+  {
+   "Modelo": "Dummy (estratificado)",
+   "Conjunto": "Entrenamiento",
+   "Accuracy": 0.7504006536153097,
+   "Balanced accuracy": 0.4998641680012957,
+   "Precision": 0.1459670767134096,
+   "Recall": 0.14579974923876052,
+   "F1 (clase 1)": 0.1458833649951611,
+   "F1 macro": 0.4998640752993028,
+   "F1 ponderado": 0.750341328689262,
+   "AUC-ROC": 0.49986416800129574,
+   "AUC-PR": 0.14616543320884978
+  },
+  {
+   "Modelo": "Dummy (estratificado)",
+   "Conjunto": "Validación",
+   "Accuracy": 0.7516558719296101,
+   "Balanced accuracy": 0.5016982940970293,
+   "Precision": 0.1490933512424446,
+   "Recall": 0.14847015549239256,
+   "F1 (clase 1)": 0.14878110077909024,
+   "F1 macro": 0.5017008675886924,
+   "F1 ponderado": 0.751440229887077,
+   "AUC-ROC": 0.5016982940970294,
+   "AUC-PR": 0.1466134885031699
+  },
+  {
+   "Modelo": "Regresión logística (baseline)",
+   "Conjunto": "Entrenamiento",
+   "Accuracy": 0.719647215326441,
+   "Balanced accuracy": 0.7347002153558253,
+   "Precision": 0.31115731115731116,
+   "Recall": 0.7559734909546839,
+   "F1 (clase 1)": 0.4408581933650873,
+   "F1 macro": 0.6268909684935453,
+   "F1 ponderado": 0.7585280244072748,
+   "AUC-ROC": 0.8098857226354788,
+   "AUC-PR": 0.4016734922572797
+  },
+  {
+   "Modelo": "Regresión logística (baseline)",
+   "Conjunto": "Validación",
+   "Accuracy": 0.7183184651105952,
+   "Balanced accuracy": 0.7316723349058434,
+   "Precision": 0.3091172014873984,
+   "Recall": 0.7505433873934124,
+   "F1 (clase 1)": 0.43788713846754135,
+   "F1 macro": 0.6249800621324939,
+   "F1 ponderado": 0.7573740843461411,
+   "AUC-ROC": 0.8071208504417728,
+   "AUC-PR": 0.40183747606265174
+  }
+ ],
+ "cv_clf": {
+  "f1": [
+   0.44087012762554834,
+   0.0020172110501263762
+  ],
+  "recall": [
+   0.7560809600573168,
+   0.004357176724271999
+  ],
+  "precision": [
+   0.31115314577480513,
+   0.0014857572314985082
+  ],
+  "roc_auc": [
+   0.8096619849834262,
+   0.0026870517523883523
+  ],
+  "pr_auc": [
+   0.40176027313557794,
+   0.0070354133534050855
+  ]
+ },
+ "ablacion": [
+  {
+   "Variante": "Solo variables originales (17 predictores)",
+   "Accuracy": 0.7165831602101919,
+   "Balanced accuracy": 0.7316261279169307,
+   "Precision": 0.3079816702003967,
+   "Recall": 0.7528841330881123,
+   "F1 (clase 1)": 0.43714202504611205,
+   "F1 macro": 0.6238757750500045,
+   "F1 ponderado": 0.7560156324094741,
+   "AUC-ROC": 0.8056990660114735,
+   "AUC-PR": 0.40041728812373
+  },
+  {
+   "Variante": "Originales + derivadas (24 tras codificar)",
+   "Accuracy": 0.7183184651105952,
+   "Balanced accuracy": 0.7316723349058434,
+   "Precision": 0.3091172014873984,
+   "Recall": 0.7505433873934124,
+   "F1 (clase 1)": 0.43788713846754135,
+   "F1 macro": 0.6249800621324939,
+   "F1 ponderado": 0.7573740843461411,
+   "AUC-ROC": 0.8071208504417728,
+   "AUC-PR": 0.40183747606265174
+  },
+  {
+   "Variante": "Con derivadas, entrenamiento sin duplicados",
+   "Accuracy": 0.7220090431382133,
+   "Balanced accuracy": 0.7318935632192732,
+   "Precision": 0.31163115612993364,
+   "Recall": 0.7458618960040128,
+   "F1 (clase 1)": 0.43959400867165943,
+   "F1 macro": 0.6273765538531697,
+   "F1 ponderado": 0.7602585783097325,
+   "AUC-ROC": 0.806300381447799,
+   "AUC-PR": 0.399581195963216
+  }
+ ],
+ "n_train_sin_dup": 171318,
+ "cm": [
+  [
+   24901,
+   10033
+  ],
+  [
+   1492,
+   4489
+  ]
+ ],
+ "odds": {
+  "PhysActivity": 0.8052456172455773,
+  "Income": 0.8880525635039054,
+  "Smoker": 0.9185257799375012,
+  "Education": 0.9428617299077946,
+  "UnhealthyDays": 0.9518985523721891,
+  "MentHlth": 0.9773256596491581,
+  "PhysHlth": 0.9865101437360656,
+  "NoDocbcCost": 1.0036280192219746,
+  "DiffWalk": 1.1297308299583018,
+  "BMI_cat_Normal": 1.1832246320583393,
+  "Age_BMI": 1.2191073963961658,
+  "Stroke": 1.2332015822103666,
+  "Sex": 1.2751470061374055,
+  "BMI": 1.2883395499397818,
+  "HeartDiseaseorAttack": 1.3451516420386818,
+  "Age": 1.3699735803170525,
+  "BMI_cat_Sobrepeso": 1.4172196666692696,
+  "BMI_cat_Obesidad III": 1.4602623995819508,
+  "BMI_cat_Obesidad I": 1.6352635273313167,
+  "BMI_cat_Obesidad II": 1.6560707446338478,
+  "GenHlth": 1.700177381628069,
+  "HighChol": 1.7486968102083342,
+  "HighBP": 2.0161867295859683,
+  "CholCheck": 4.430363371628487
+ },
+ "baseline_reg": [
+  {
+   "Modelo": "Dummy (media)",
+   "Conjunto": "Entrenamiento",
+   "R²": -5.724161591080801e-05,
+   "RMSE": 6.520320064784208,
+   "MAE": 4.884197094244304
+  },
+  {
+   "Modelo": "Dummy (media)",
+   "Conjunto": "Validación",
+   "R²": -0.00016010475375405342,
+   "RMSE": 6.570287369688036,
+   "MAE": 4.913192817649195
+  },
+  {
+   "Modelo": "Regresión lineal simple (GenHlth)",
+   "Conjunto": "Entrenamiento",
+   "R²": 0.059050445841776766,
+   "RMSE": 6.324695996345268,
+   "MAE": 4.705361662173027
+  },
+  {
+   "Modelo": "Regresión lineal simple (GenHlth)",
+   "Conjunto": "Validación",
+   "R²": 0.05911177827543479,
+   "RMSE": 6.372628734784869,
+   "MAE": 4.730271542689947
+  },
+  {
+   "Modelo": "Regresión lineal múltiple (baseline)",
+   "Conjunto": "Entrenamiento",
+   "R²": 0.13338545566824633,
+   "RMSE": 6.06973138453907,
+   "MAE": 4.51214794760224
+  },
+  {
+   "Modelo": "Regresión lineal múltiple (baseline)",
+   "Conjunto": "Validación",
+   "R²": 0.1372739116503099,
+   "RMSE": 6.102194793906911,
+   "MAE": 4.511992364192327
+  }
+ ],
+ "cv_reg": {
+  "r2": [
+   0.13671290747287052,
+   0.0017800692749384219
+  ],
+  "rmse": [
+   5.786615603525521,
+   0.018304388090916265
+  ],
+  "mae": [
+   4.440036868416134,
+   0.011259425511170857
+  ]
+ },
+ "coef_reg": {
+  "PhysActivity": -1.2343556967376892,
+  "Stroke": -1.1659792636936592,
+  "Age": -1.098323829282835,
+  "HeartDiseaseorAttack": -0.8033316954021067,
+  "PhysHlth": -0.42849232555431804,
+  "Smoker": -0.33241448226391035,
+  "Education": -0.13840049732414428,
+  "MentHlth": -0.09313083935219495,
+  "NoDocbcCost": -0.08647099673559856,
+  "Sex": 0.025921453656649465,
+  "UnhealthyDays": 0.1807237336202003,
+  "Income": 0.21992142541727633,
+  "HighChol": 0.3931002191886063,
+  "CholCheck": 0.674645613356738,
+  "GenHlth": 1.0504747022054994,
+  "DiffWalk": 1.8315154178058892,
+  "Diabetes_binary": 2.119486183885176,
+  "HighBP": 2.1890716932053182
+ },
+ "reg_simple": {
+  "pendiente_std": 1.5348170440568807,
+  "intercepto": 28.757565282971434,
+  "r_genhlth": 0.2464356671352619
+ },
+ "resid_reg": {
+  "media": 0.08041440251957481,
+  "sd": 6.101739489016115,
+  "skew": 1.2407485253593267,
+  "pred_min": 22.041512867551802,
+  "pred_max": 37.873777877359245
+ },
+ "versiones": {
+  "python": "3.13.18",
+  "pandas": "3.0.5",
+  "numpy": "2.5.3",
+  "scikit-learn": "1.9.1",
+  "imbalanced-learn": "0.14.2",
+  "matplotlib": "3.11.2",
+  "seaborn": "0.13.2"
+ }
+}

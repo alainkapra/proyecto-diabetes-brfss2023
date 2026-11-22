@@ -1,0 +1,28 @@
+[theme]
+base = "dark"
+primaryColor = "#22d3ee"
+backgroundColor = "#0a0f26"
+secondaryBackgroundColor = "#151b3d"
+textColor = "#e7ecff"
+borderColor = "#2a3160"
+baseRadius = "12px"
+font = "Manrope, Segoe UI, Arial, sans-serif"
+headingFont = "Sora, Manrope, Arial, sans-serif"
+
+[[theme.fontFaces]]
+family = "Manrope"
+url = "app/static/fonts/manrope-latin-wght-normal.woff2"
+weight = "200 800"
+
+[[theme.fontFaces]]
+family = "Sora"
+url = "app/static/fonts/sora-latin-wght-normal.woff2"
+weight = "100 800"
+
+[server]
+headless = true
+runOnSave = false
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false
