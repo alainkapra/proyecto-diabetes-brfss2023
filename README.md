@@ -78,7 +78,7 @@ streamlit run dashboard/app.py      # abre la aplicación en http://localhost:85
 
 Para reproducir las fases 2 y 3, ejecute en orden los cuadernos de `notebooks/`. La fase 3 tarda unos 8 minutos en CPU.
 
-El artículo se compila con `cd reports/articulo_latex && python generar_tablas.py && latexmk -pdf main.tex`. El script `generar_tablas.py` toma las tablas directamente de los resultados en JSON.
+El artículo se compila con `cd reports/articulo_latex && python generar_tablas.py && latexmk -pdf main.tex`. El script `generar_tablas.py` toma las tablas directamente de los resultados en JSON. Las citas siguen APA 7 con `biblatex-apa`, por lo que se necesita `biber` (incluido en TeX Live y MiKTeX); en Overleaf compila sin cambios.
 
 ## Módulos de la aplicación
 
