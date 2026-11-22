@@ -3,7 +3,7 @@
 **Proyecto Integrador de Ciencia de Datos e Inteligencia Artificial**: Maestría en Inteligencia Artificial, Universidad de La Salle (Bogotá), 2026.
 Autor: Alain Alexander Camacho Prado. Asignatura: Ciencia de Datos. Docente: Fabián Camilo Castro Riveros.
 
-> **Aplicación en vivo:** `https://alainkapra-diabetes-brfss2023.streamlit.app`. Reemplace este enlace por el definitivo después del despliegue; los pasos están en [docs/DESPLIEGUE.md](docs/DESPLIEGUE.md).
+> **Aplicación en vivo:** [alainkapra-diabetes-brfss2023.streamlit.app](https://alainkapra-diabetes-brfss2023.streamlit.app) · Despliegue documentado en [docs/DESPLIEGUE.md](docs/DESPLIEGUE.md).
 
 Solución de ciencia de datos sobre **272.769 adultos** de la encuesta *Behavioral Risk Factor Surveillance System* (BRFSS) 2023 de los CDC. Cubre cinco frentes:
 
