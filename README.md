@@ -18,7 +18,7 @@
 **Autor:** Alain Alexander Camacho Prado, Md. · [acamacho88@unisalle.edu.co](mailto:acamacho88@unisalle.edu.co)
 **Asignatura:** Ciencia de Datos · **Docente:** Fabián Camilo Castro Riveros
 
-## De qué se trata
+## PRESENTACIÓN
 
 Las guías clínicas recomiendan tamizar la diabetes con glucosa o hemoglobina glicosilada, pero con recursos limitados la pregunta práctica es **a quién tamizar primero**. Este proyecto responde esa pregunta con aprendizaje automático sobre **272.769 adultos** de la encuesta *Behavioral Risk Factor Surveillance System* (BRFSS) 2023 de los CDC, usando solo información que una persona puede reportar en una encuesta.
 
@@ -33,7 +33,7 @@ El trabajo combina cinco frentes:
 - **Interpretabilidad:** explica cada predicción con valores SHAP.
 - **Aplicación web:** lleva todo lo anterior a una herramienta pública e interactiva.
 
-## Resultados principales
+## RESULTADOS PRINCIPALES
 
 Medidos en un conjunto de prueba de 40.916 personas que el modelo nunca vio durante el entrenamiento.
 
@@ -48,7 +48,7 @@ Medidos en un conjunto de prueba de 40.916 personas que el modelo nunca vio dura
 
 > **Hallazgo central:** cuatro familias de modelos muy diferentes llegaron al mismo desempeño. El límite está en la información disponible y no en el algoritmo. Para mejorar, hacen falta mejores datos (laboratorio, antecedentes familiares) más que modelos más complejos.
 
-## La aplicación
+## VISUALIZACIÓN DE LA APLICACIÓN (HACER CLIC SOBRE LA IMAGEN)
 
 <p align="center">
   <a href="https://alainkapra-diabetes-brfss2023.streamlit.app"><img src="reports/figuras/dashboard/dash1_panorama.png" alt="Panorama de la aplicación" width="100%"></a>
@@ -106,7 +106,7 @@ Además, la aplicación incluye:
 
 Todo el preprocesamiento vive dentro de *pipelines* de scikit-learn. Así, ninguna transformación aprende de los datos de evaluación (sin fuga de datos), y la aplicación usa exactamente el mismo código que el entrenamiento.
 
-## Documentos
+## DOCUMENTOS PRODUCIDOS DURANTE EL DESARROLLO DEL PROYECTO
 
 | Documento | Contenido |
 |---|---|
@@ -116,7 +116,7 @@ Todo el preprocesamiento vive dentro de *pipelines* de scikit-learn. Así, ningu
 | [Fase 3](reports/FASE_3_Diabetes_Health_Indicators_ALAIN_CAMACHO.pdf) | Modelado avanzado, segmentación, optimización e interpretabilidad |
 | [Artículo final (Fase 4)](reports/FASE_4_ENTREGA_FINAL_ALAIN_CAMACHO.pdf) | Informe técnico (Artículo científico) |
 
-## Estructura del repositorio
+## ESTRUCTIRA DEL REPOSITORIO
 
 <details>
 <summary>Ver el árbol de carpetas</summary>
@@ -152,7 +152,7 @@ proyecto-diabetes-brfss2023/
 
 </details>
 
-## Fuentes y uso
+## FUENTES Y USO
 
 - **Fuentes:**
   - Centers for Disease Control and Prevention (2023), *Behavioral Risk Factor Surveillance System: 2023 Survey Data and Documentation*.
