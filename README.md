@@ -3,7 +3,7 @@
 **Proyecto Integrador de Ciencia de Datos e Inteligencia Artificial**: Maestría en Inteligencia Artificial, Universidad de La Salle (Bogotá), 2026.
 Autor: Alain Alexander Camacho Prado. Asignatura: Ciencia de Datos. Docente: Fabián Camilo Castro Riveros.
 
-> **Aplicación en vivo:** [alainkapra-diabetes-brfss2023.streamlit.app](https://alainkapra-diabetes-brfss2023.streamlit.app) · Despliegue documentado en [docs/DESPLIEGUE.md](docs/DESPLIEGUE.md).
+> **Aplicación en vivo:** [alainkapra-diabetes-brfss2023.streamlit.app](https://alainkapra-diabetes-brfss2023.streamlit.app) 
 
 Solución de ciencia de datos sobre **272.769 adultos** de la encuesta *Behavioral Risk Factor Surveillance System* (BRFSS) 2023 de los CDC. Cubre cinco frentes:
 
@@ -60,7 +60,7 @@ proyecto-diabetes-brfss2023/
 
 ## Ejecución inmediata
 
-Requiere Python 3.13 (se probó con la versión 3.13.18).
+
 
 ```bash
 git clone https://github.com/alainkapra/proyecto-diabetes-brfss2023.git
@@ -82,7 +82,6 @@ El artículo se compila con `cd reports/articulo_latex && python generar_tablas.
 
 ## Módulos de la aplicación
 
-La guía pide cuatro módulos obligatorios:
 
 | Módulo de la guía | Dónde está | Interacción |
 |---|---|---|
