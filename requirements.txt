@@ -1,5 +1,5 @@
-# Entorno completo del proyecto (cuadernos de las Fases 2 y 3, scripts y dashboard)
-# Probado con Python 3.13.18
+# Entorno completo del proyecto 
+
 pandas==3.0.5
 numpy==2.5.3
 scipy==1.18.1
