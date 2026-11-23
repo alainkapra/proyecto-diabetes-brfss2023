@@ -144,7 +144,7 @@ proyecto-diabetes-brfss2023/
 │   ├── articulo_latex/          fuentes LaTeX (main.tex, referencias, tablas, figuras)
 │   ├── FASE_1 … FASE_3 (PDF)    informes de las fases anteriores
 │   └── resultados/, figuras/, artefactos_fase2/, artefactos_fase3/
-├── docs/                        guía de despliegue e imagen de portada
+├── docs/                        imagen de portada del README
 ├── .streamlit/config.toml       tema de la aplicación
 ├── requirements.txt             entorno completo con versiones exactas (pip)
 └── environment.yml              el mismo entorno para conda
