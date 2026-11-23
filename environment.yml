@@ -1,5 +1,5 @@
-# Entorno conda equivalente a requirements.txt (versiones exactas)
-# Uso: conda env create -f environment.yml && conda activate diabetes-brfss2023
+
+
 name: diabetes-brfss2023
 channels:
   - conda-forge
